@@ -4,7 +4,7 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    color: white; /* Texto en blanco */
+    color: white;
 }
 
 /* Estilos del encabezado */
@@ -18,7 +18,7 @@ header {
     font-weight: bold;
     font-style: italic;
     font-size: 36px;
-    animation: text-animation 1s ease-in-out alternate infinite;
+    animation: text-animation 2s steps(40, end);
 }
 
 /* Estilos de la sección de programación */
@@ -34,12 +34,11 @@ header {
     font-weight: bold;
     font-style: italic;
     font-size: 24px;
-    animation: text-animation 1s ease-in-out alternate infinite;
+    animation: text-animation 2s steps(40, end);
 }
 
 /* Estilos del reproductor de audio (agregar según tus necesidades) */
 
-/* Estilos del pie de página */
 /* Estilos del pie de página */
 footer {
     text-align: center;
@@ -51,24 +50,19 @@ footer {
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
-    animation: text-animation 1s ease-in-out alternate infinite;
 }
 
 .copyright {
-    margin: 0; /* Elimina el margen predeterminado que separa el texto del pie de página */
-}
-
+    margin: 0;
+    animation: text-animation 2s steps(40, end);
 }
 
 /* Animación de texto */
 @keyframes text-animation {
     0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
+        width: 0;
     }
     100% {
-        transform: scale(1);
+        width: 100%;
     }
 }
