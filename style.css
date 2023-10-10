@@ -1,16 +1,16 @@
 /* Estilos generales */
 body {
     font-family: 'Lato', sans-serif;
-    background-color: black; /* Fondo negro */
+    background-color: black;
     margin: 0;
     padding: 0;
+    color: white; /* Texto en blanco */
 }
 
 /* Estilos del encabezado */
 header {
     text-align: center;
     background-color: #333;
-    color: white;
     padding: 20px;
 }
 
@@ -28,7 +28,6 @@ header {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: text-animation 1s ease-in-out alternate infinite;
 }
 
 .program-title {
@@ -45,7 +44,6 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
-    color: white;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -53,4 +51,17 @@ footer {
     font-weight: bold;
     font-style: italic;
     animation: text-animation 1s ease-in-out alternate infinite;
+}
+
+/* Animación de texto */
+@keyframes text-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
