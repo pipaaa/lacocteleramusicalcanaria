@@ -28,6 +28,8 @@ header {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fade-in 1.5s ease-in-out;
+    color: black; /* Cambiamos el color del texto a negro */
 }
 
 .program-title {
@@ -36,6 +38,7 @@ header {
     font-size: 24px;
     animation: fade-in 1.5s ease-in-out;
 }
+
 
 /* Estilos del reproductor de audio (agregar según tus necesidades) */
 
