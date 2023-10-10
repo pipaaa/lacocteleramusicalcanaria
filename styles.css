@@ -7,67 +7,9 @@ body {
     color: white;
 }
 
-/* Estilos del encabezado */
-header {
-    text-align: center;
-    background-color: #333;
-    padding: 20px;
-}
-
-.title {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 36px;
-    animation: fade-in 1.5s ease-in-out;
-}
-
-/* Estilos de la sección de programación */
-.program {
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fade-in 1.5s ease-in-out;
-    color: black; /* Cambiamos el color del texto a negro */
-}
-
-.program-title {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 24px;
-    animation: fade-in 1.5s ease-in-out;
-}
-
-
-/* Estilos del reproductor de audio (agregar según tus necesidades) */
-
-/* Estilos del pie de página */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.copyright {
-    margin: 0;
-    animation: fade-in 1.5s ease-in-out;
-}
-
-/* Animación de aparición suave */
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+/* Estilos para ocultar todo el contenido */
+.hide-content {
+    display: none;
 }
 
 /* Estilos para el elemento de carga */
@@ -99,4 +41,3 @@ footer {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
