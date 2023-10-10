@@ -2,4 +2,4 @@
 setTimeout(() => {
     const loader = document.querySelector('.loader');
     loader.style.display = 'none';
-}, 2000); // 2000 milisegundos = 2 segundos
+}, 4000); // 2000 milisegundos = 2 segundos
