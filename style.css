@@ -40,6 +40,7 @@ header {
 /* Estilos del reproductor de audio (agregar según tus necesidades) */
 
 /* Estilos del pie de página */
+/* Estilos del pie de página */
 footer {
     text-align: center;
     padding: 10px;
@@ -51,6 +52,12 @@ footer {
     font-weight: bold;
     font-style: italic;
     animation: text-animation 1s ease-in-out alternate infinite;
+}
+
+.copyright {
+    margin: 0; /* Elimina el margen predeterminado que separa el texto del pie de página */
+}
+
 }
 
 /* Animación de texto */
