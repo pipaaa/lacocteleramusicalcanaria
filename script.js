@@ -1,5 +1,6 @@
 const ball = document.getElementById('ball');
-const block = document.getElementById('block');
+const spikes = document.getElementById('spikes');
+
 let isJumping = false;
 
 document.addEventListener('keydown', jump);
