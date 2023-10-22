@@ -1,9 +1,30 @@
-// Oculta todo el contenido al cargar la página
-document.body.classList.add('hide-content');
+const ball = document.getElementById('ball');
+const block = document.getElementById('block');
+let isJumping = false;
 
-// Espera 2 segundos y luego muestra el contenido y oculta el símbolo de carga
-setTimeout(() => {
-    const loader = document.querySelector('.loader');
-    loader.style.display = 'none';
-    document.body.classList.remove('hide-content');
-}, 2000); // 2000 milisegundos = 2 segundos
+document.addEventListener('keydown', jump);
+
+function jump(event) {
+    if (event.keyCode === 32 && !isJumping) {
+        isJumping = true;
+        let jumpHeight = 100;
+        let ballPosition = 30;
+        const jumpInterval = setInterval(() => {
+            if (ballPosition >= jumpHeight) {
+                clearInterval(jumpInterval);
+                const fallInterval = setInterval(() => {
+                    if (ballPosition <= 30) {
+                        clearInterval(fallInterval);
+                        isJumping = false;
+                    } else {
+                        ballPosition -= 5;
+                        ball.style.bottom = ballPosition + 'px';
+                    }
+                }, 20);
+            } else {
+                ballPosition += 5;
+                ball.style.bottom = ballPosition + 'px';
+            }
+        }, 20);
+    }
+}
